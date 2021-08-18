@@ -1,0 +1,288 @@
+{
+	"info": {
+		"_postman_id": "ca48ef79-11b7-4b61-85c2-edaf7d745d38",
+		"name": "api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EP_1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "162.55.220.72:5005/get_method?name={{$randomFullName}}&age={{$randomInt}}",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "{{$randomFullName}}"
+						},
+						{
+							"key": "age",
+							"value": "{{$randomInt}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Petia",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "2222",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{ip_and_port}}/user_info_3",
+					"host": [
+						"{{ip_and_port}}"
+					],
+					"path": [
+						"user_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Petia",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "15",
+							"disabled": true
+						},
+						{
+							"key": "salary",
+							"value": "1111",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_and_port}}/object_info_1?name=Petia&age=131&weight=1111",
+					"host": [
+						"{{ip_and_port}}"
+					],
+					"path": [
+						"object_info_1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Petia"
+						},
+						{
+							"key": "age",
+							"value": "131"
+						},
+						{
+							"key": "weight",
+							"value": "1111"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_and_port}}/object_info_2?name=Petia&age=11&salary=111",
+					"host": [
+						"{{ip_and_port}}"
+					],
+					"path": [
+						"object_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Petia"
+						},
+						{
+							"key": "age",
+							"value": "11"
+						},
+						{
+							"key": "salary",
+							"value": "111"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_and_port}}/object_info_3?name=Nik&age=131&salary=321312312",
+					"host": [
+						"{{ip_and_port}}"
+					],
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Nik"
+						},
+						{
+							"key": "age",
+							"value": "131"
+						},
+						{
+							"key": "salary",
+							"value": "321312312"
+						},
+						{
+							"key": "name",
+							"value": "Nik",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "22",
+							"disabled": true
+						},
+						{
+							"key": "salary",
+							"value": "232",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_and_port}}/object_info_4?name=Nik&age=21&salary=131",
+					"host": [
+						"{{ip_and_port}}"
+					],
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Nik"
+						},
+						{
+							"key": "age",
+							"value": "21"
+						},
+						{
+							"key": "salary",
+							"value": "131"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Nik",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "232",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{ip_and_port}}/user_info_2",
+					"host": [
+						"{{ip_and_port}}"
+					],
+					"path": [
+						"user_info_2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
